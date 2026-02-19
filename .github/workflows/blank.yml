@@ -1,0 +1,17 @@
+name: Auto PR
+on:
+  create:
+jobs:
+  create-pr:
+    if: github.event.ref_type == 'branch' && github.event.ref != 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          gh pr create \
+            --base main \
+            --head ${{ github.event.ref }} \
+            --title "Auto PR: ${{ github.event.ref }}" \
+            --body "Automatically created PR"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
