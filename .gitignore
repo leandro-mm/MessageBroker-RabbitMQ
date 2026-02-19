@@ -488,3 +488,9 @@ MessageBrokerRabbitMQ.Core/bin/
 MessageBrokerRabbitMQ.Core/obj/
 MessageBrokerRabbitMQ.Core/appsettings.Production.json
 MessageBrokerRabbitMQ.Core/Properties/launchSettings.json
+# WebApp.EntryPoint specific
+WebApp.EntryPoint/bin/
+WebApp.EntryPoint/obj/
+WebApp.EntryPoint/appsettings.Production.json
+WebApp.EntryPoint/wwwroot/uploads/
+WebApp.EntryPoint/Properties/launchSettings.json
