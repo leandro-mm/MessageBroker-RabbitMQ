@@ -1,0 +1,25 @@
+services:
+
+  rabbitmq:
+    container_name: RabbitMQ-Test
+    hostname: rabbitmq
+    build:
+      context: ./infra/rabbitmq
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq/mnesia
+    ports:
+      - "15672:15672" #management # habilitado visualização no browser
+      #- "15692:15692" #prometheus # desnecessário
+      - "5672:5672" #amqp       # desnecessário
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "curl -I -s -L http://localhost:15672 || exit 1"
+        ]
+      interval: 30s
+      timeout: 20s
+      retries: 5
+
+volumes:
+  rabbitmq_data:
