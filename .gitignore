@@ -494,3 +494,4 @@ WebApp.EntryPoint/obj/
 WebApp.EntryPoint/appsettings.Production.json
 WebApp.EntryPoint/wwwroot/uploads/
 WebApp.EntryPoint/Properties/launchSettings.json
+WebApp.EntryPoint/appsettings.Development.json
