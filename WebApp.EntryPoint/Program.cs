@@ -1,4 +1,5 @@
 using MessageBrokerRabbitMQ.Core;
+using MessageBrokerRabbitMQ.Core.Infrastructure.Data;
 using MessageBrokerRabbitMQ.Core.Infrastructure.Extensions;
 using MessageBrokerRabbitMQ.Core.Infrastructure.Queue;
 using Npgsql;
@@ -60,9 +61,10 @@ builder.Services.AddTransientWithRetry<NpgsqlConnection, NpgsqlException>(async 
     return connection;
 });
 
-//builder.Services.AddSingleton<ConsumerManager>();
+builder.Services.AddSingleton<MessageDataService>();
 builder.Services.AddSingleton<PublisherManager>();
 builder.Services.AddTransient<Publisher>();
+
 
 var app = builder.Build();
 
