@@ -1,7 +1,7 @@
-﻿using MessageBrokerRabbitMQ.Core.Infrastructure.Queue;
+﻿using RabbitMQBasic.Core.Infrastructure.Queue;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace MessageBrokerRabbitMQ.Core;
+namespace RabbitMQBasic.Core;
 
 public class PublisherManager
 {

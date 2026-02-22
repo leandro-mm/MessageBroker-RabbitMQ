@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
-namespace MessageBrokerRabbitMQ.Core.Infrastructure.Extensions
+﻿namespace RabbitMQBasic.Core.Infrastructure.Extensions
 {
     public static partial class Extensions
     {
         public static string Serialize<T>(this T objectToSerialize) => System.Text.Json.JsonSerializer.Serialize<T>(objectToSerialize);
-        
+
         public static T Deserialize<T>(this string jsonText) => System.Text.Json.JsonSerializer.Deserialize<T>(jsonText);
 
         public static byte[] ToByteArray(this string text) => System.Text.Encoding.UTF8.GetBytes(text);
@@ -19,7 +12,7 @@ namespace MessageBrokerRabbitMQ.Core.Infrastructure.Extensions
 
         public static ReadOnlyMemory<byte> ToReadOnlyMemory(this byte[] bytes) => new ReadOnlyMemory<byte>(bytes);
 
-        
+
 
     }
 }

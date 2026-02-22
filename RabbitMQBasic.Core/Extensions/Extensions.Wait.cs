@@ -1,4 +1,4 @@
-﻿namespace MessageBrokerRabbitMQ.Core.Infrastructure.Extensions
+﻿namespace RabbitMQBasic.Core.Infrastructure.Extensions
 {
     public static partial class Extensions
     {

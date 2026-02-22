@@ -1,5 +1,5 @@
-using MessageBrokerRabbitMQ.Core;
-using MessageBrokerRabbitMQ.Core.Infrastructure.Queue;
+using RabbitMQBasic.Core;
+using RabbitMQBasic.Core.Infrastructure.Queue;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApp.EntryPoint.Controllers;

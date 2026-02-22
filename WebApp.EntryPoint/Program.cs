@@ -1,7 +1,7 @@
-using MessageBrokerRabbitMQ.Core;
-using MessageBrokerRabbitMQ.Core.Infrastructure.Data;
-using MessageBrokerRabbitMQ.Core.Infrastructure.Extensions;
-using MessageBrokerRabbitMQ.Core.Infrastructure.Queue;
+using RabbitMQBasic.Core;
+using RabbitMQBasic.Core.Infrastructure.Data;
+using RabbitMQBasic.Core.Infrastructure.Extensions;
+using RabbitMQBasic.Core.Infrastructure.Queue;
 using Npgsql;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Exceptions;
