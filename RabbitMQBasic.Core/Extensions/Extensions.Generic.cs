@@ -2,7 +2,7 @@
 using Polly;
 using Polly.Retry;
 
-namespace MessageBrokerRabbitMQ.Core.Infrastructure.Extensions
+namespace RabbitMQBasic.Core.Infrastructure.Extensions
 {
     public static partial class Extensions
     {
@@ -19,7 +19,7 @@ namespace MessageBrokerRabbitMQ.Core.Infrastructure.Extensions
 
 
 
-            int sleepTimer = Convert.ToInt32((ticksPerSecond / messagesPerSecond) - (messagesPerSecond / 12 ));
+            int sleepTimer = Convert.ToInt32((ticksPerSecond / messagesPerSecond) - (messagesPerSecond / 12));
             // Algorithm accuracy
             //Publish 10 m/s = 98% | 100 m/s = 96% | 500 m/s = 87% |  
             //Consume 10 m/s = 98% | 100 m/s = 94% | 500 m/s = 78% |  

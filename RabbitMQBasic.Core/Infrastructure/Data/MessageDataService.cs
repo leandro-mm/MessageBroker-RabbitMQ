@@ -1,8 +1,8 @@
 using Npgsql;
-using RabbitMQWalkthrough.Core.Model;
+using MessageBrokerRabbitMQ.Core.Model;
 
 
-namespace MessageBrokerRabbitMQ.Core.Infrastructure.Data;
+namespace RabbitMQBasic.Core.Infrastructure.Data;
 
 public class MessageDataService
 {
@@ -25,8 +25,8 @@ public class MessageDataService
 
     public void MarkAsProcessed(Message message, NpgsqlConnection sqlConnection, NpgsqlTransaction sqlTransaction)
     {
-            message.Processed = DateTimeOffset.UtcNow;
-            //message.MarkAsProcessed(sqlConnection, sqlTransaction);
+        message.Processed = DateTimeOffset.UtcNow;
+        //message.MarkAsProcessed(sqlConnection, sqlTransaction);
     }
 
 }

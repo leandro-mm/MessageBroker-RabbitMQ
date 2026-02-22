@@ -483,11 +483,11 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 
-# MessageBrokerRabbitMQ.Core specific
-MessageBrokerRabbitMQ.Core/bin/
-MessageBrokerRabbitMQ.Core/obj/
-MessageBrokerRabbitMQ.Core/appsettings.Production.json
-MessageBrokerRabbitMQ.Core/Properties/launchSettings.json
+# RabbitMQBasic.Core specific
+RabbitMQBasic.Core/bin/
+RabbitMQBasic.Core/obj/
+RabbitMQBasic.Core/appsettings.Production.json
+RabbitMQBasic.Core/Properties/launchSettings.json
 # WebApp.EntryPoint specific
 WebApp.EntryPoint/bin/
 WebApp.EntryPoint/obj/
